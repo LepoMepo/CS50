@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hobbies</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+    <script>
+      function quack() {
+      document.getElementById("duck").src = "duck-quack.png";
+      }
+    </script>
+  </head>
+  <body class="d-flex bw text-center h-100vh m-0">
+    <div class="mx-auto d-flex cover-container h-100 w-100 flex-column pad-10">
+      <header class="mb-auto">
+        <div>
+          <nav class="navbar navbar-expand-lg navbar navbar-dark w-100">
+            <div class="container-fluid">
+              <a class="navbar-brand justify-content-start" href="hobbies.html"><h3>Hobbies</h3></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" aria-current="page" href="index.html">Homepage</a>
+                  <a class="nav-link active" aria-current="page" href="hobbies.html">Hobbies</a>
+                  <a class="nav-link" href="education.html">Education</a>
+                  <a class="nav-link" href="contacts.html">Contacts</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <main class="d-flex flex-column m-1">
+        <div class="accordion accordion-flush accordion-border-radius" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed w-100" style="background-color:#393939;color:white;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Programming
+              </button>
+            </h3>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <p class="text-left">The main hobbie for me for now is programming. That is why I study CS50x. If you want duck to say quack press the button
+                </p>
+                <img class="img-fluid" id="duck" src="duck.jpg" alt="duck" width="540" height="390">
+                <br>
+                <button class="bw text-center p-1 bord-rad-5 font-20 disable" type="button" onclick="quack()">QUACK!</button>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed w-100" style="background-color:#393939;color:white;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Film photography
+              </button>
+            </h3>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Film photography is my passion. I really love to shoot photos of my girlfriend</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed w-100" style="background-color:#393939;color:white;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Nuclear engineering
+              </button>
+            </h3>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Nuclear engineering is my last but not least interest. I work as a designer of nuclear power plants</div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="mt-auto">
+        <p class="m-1 p-1">My name is Paul and this web-page was developed for CS50x</p>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
